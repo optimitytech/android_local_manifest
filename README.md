@@ -19,15 +19,15 @@ sudo pip3 install meson mako jinja2 ply pyyaml
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.0_r22
-curl -o .repo/local_manifests/manifest_brcm_rpi4.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/manifest_brcm_rpi4.xml --create-dirs
+curl -o .repo/local_manifests/manifest_brcm_rpi4.xml -L https://raw.githubusercontent.com/optimitytech/android_local_manifest/refs/heads/android-12.1/manifest_brcm_rpi4.xml --create-dirs
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.0_r22 --depth=1
-curl -o .repo/local_manifests/manifest_brcm_rpi4.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/manifest_brcm_rpi4.xml --create-dirs
-curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/remove_projects.xml
+curl -o .repo/local_manifests/manifest_brcm_rpi4.xml -L https://raw.githubusercontent.com/optimitytech/android_local_manifest/refs/heads/android-12.1/manifest_brcm_rpi4.xml --create-dirs
+curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/optimitytech/android_local_manifest/refs/heads/android-12.1/remove_projects.xml
 ```
 
 4. Sync source code:
